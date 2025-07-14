@@ -30,22 +30,11 @@ This project implements a drowsiness detection system that monitors a person's e
    ```
 3. The system will access your webcam, process the video feed, and display alerts if drowsiness is detected based on eye and mouth movements.
 
-## Project Structure
-```
-drowsiness-detection/
-│
-├── drowsiness_detection.py  # Main script for running the drowsiness detection
-├── model.keras              # Trained CNN model
-├── requirements.txt         # List of dependencies
-├── README.md               # This file
-└── utils/                  # Utility scripts for preprocessing or helper functions (if any)
-```
-
 ## How It Works
 1. **Video Capture**: OpenCV captures real-time video from the webcam.
 2. **Facial Feature Detection**: The system detects the eyes and mouth using OpenCV's pre-trained Haar cascades or other face detection methods.
 3. **Drowsiness Analysis**: The CNN model processes the detected facial features to determine if the eyes or mouth indicate drowsiness (e.g., prolonged eye closure or yawning).
-4. **Alert Generation**: If drowsiness is detected, the system triggers an alert (e.g., visual or audio warning).
+4. **Alert Generation**: If drowsiness is detected, the system triggers an alert (e.g., visual warning).
 
 ## Model Details
 - **Architecture**: Convolutional Neural Network (CNN)
